@@ -1,0 +1,90 @@
+/*
+for more supported tags please visit this link
+http://livedocs.adobe.com/flash/9.0/ActionScriptLangRefV3/flash/text/StyleSheet.html
+*/
+a:link, a:visited 
+{
+  color: #8D8D8D;
+  text-decoration: none;
+}
+
+a:hover, a:active 
+{
+  color: #565656;
+  text-decoration: underline;
+}
+
+.green
+{
+	color:#aa00aa;
+}
+
+.violet
+{
+	color:#aa00aa;
+}
+
+.black
+{
+	color:#000000;
+}
+
+.grey
+{
+	color:#a0a0a0;
+}
+
+.grey-darker
+{
+	color:#585858;
+}
+
+.red
+{
+	color:#be4921;
+}
+
+.lbl
+{
+	color:#8f8e8e;
+}
+
+.details
+{
+	color: #cacaca;
+	font-style: normal;
+}
+
+.score
+{
+	font-family: Arial;
+	font-size: 12;
+	color:#585858;
+}
+
+.total
+{
+	font-family: Arial;
+	font-size: 16;
+	color:#000000;
+}
+
+.startQuiz
+{
+	font-family: Aller;
+	font-size: 14;
+	color:#585858;
+}
+
+.result
+{
+	font-family: Arial;
+	font-size: 16;
+	color:#a0a0a0;
+}
+
+.title
+{
+	color:#aa00aa;
+	font-size: 18;
+}

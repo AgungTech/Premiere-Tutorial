@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	
+	<settings>
+	
+		<!--<Start> Component width & height -->
+		<!-- It supports only positive integers -->
+		<width>890</width><!-- Native size: 582 -->
+		<height>640</height><!-- Native size: 303 -->
+		<!--<End> -->
+		
+		<!-- It supports only positive integers -->
+		<logoW>90</logoW><!-- Default: 126 -->
+		<logoH>90</logoH><!-- Default: 77 -->
+		
+		<!-- It supports only positive numbers -->
+		<scrollbarMinH>10</scrollbarMinH><!-- Default: 10 -->
+		<!-- To disable it, set value to: 1(ONE) -->
+		<scrollbarMultiplier>0.8</scrollbarMultiplier><!-- Default: 0.8 -->
+		
+		<loaderColor>0x000000</loaderColor><!-- Default: 0x000000 -->
+		
+		<!--<Start> It supports only boolean values(true/false) -->
+		<viewDetails>true</viewDetails>
+		<introPage>true</introPage>
+		<timer>true</timer>
+		<sendDataToPhp>true</sendDataToPhp>
+		<generalTime>true</generalTime>
+		<!-- NOTE: do not use autoClose & autoScroll in the same time, for more details, please read the HELP file -->
+		<startExpanded>true</startExpanded>
+		<autoClose>false</autoClose>
+		<autoOpen>true</autoOpen>
+		<autoScroll>true</autoScroll>
+		<!--<End> -->
+		
+		<!--<Start> It supports only numbers -->
+		<totalScore>500</totalScore>
+		<generalTimeLimit>600</generalTimeLimit><!-- Default: 60 seconds -->
+		<!--<End> -->
+		
+		<!--<Start> String values -->
+		<phpPath>SimpanKuis.php</phpPath>
+		<cssPath>Kuis.css</cssPath>
+		<imgPath>gambar/logo.png</imgPath>
+		
+		<timeElapsed><![CDATA[<p class='red'>Waktu Habis!</p>]]></timeElapsed>
+		<title><![CDATA[<p class='black'><b><p class='violet'>KUIS</p> INTERAKTIF</b></p>]]></title>
+		<finalScore><![CDATA[<p class='score'>Nilai Anda: </p><p class='result'>%RESULT% of </p><p class='total'>%TOTALSCORE%</p>]]></finalScore>
+		<remainingTime><![CDATA[<p class='grey-darker'>Sisa Waktu: </p>]]></remainingTime>
+		
+		<correctAnswerLbl><![CDATA[<p class='lbl'><i>Jawaban Yang Benar: </i></p>]]></correctAnswerLbl>
+		<yourAnswerLbl><![CDATA[<p class='lbl'><i>Jawaban Anda: </i></p>]]></yourAnswerLbl>
+		<scoreLbl><![CDATA[<p class='lbl'><i>Nilai: </i></p>]]></scoreLbl>
+			
+		<detailsBtn><![CDATA[<b>Lihat Rincian</b>]]></detailsBtn>
+		<okBtn><![CDATA[<b>SELESAI</b>]]></okBtn>
+		<startQuiz><![CDATA[<b>MULAI KUIS</b>]]></startQuiz>
+		<backBtn><![CDATA[<b>KEMBALI</b>]]></backBtn>
+		<restartQuiz><![CDATA[<b>ULANGI KUIS</b>]]></restartQuiz>
+		<crtSeparator><![CDATA[<p class='black'> /</p>]]></crtSeparator>
+		<allAreWrong><![CDATA[<p class='details'>Tidak di jawab</p>]]></allAreWrong>
+		<answerAllAreWrong><![CDATA[<p class='details'>Tidak di pilih</p>]]></answerAllAreWrong>
+		<answerAllwrongInput><![CDATA[<p class='details'>Tidak di Isi</p>]]></answerAllwrongInput>
+		<answerSeparator><![CDATA[<p class='details'>; </p>]]></answerSeparator>
+		
+		<startContent>
+		<![CDATA[
+		
+			<p class='startQuiz'><b>
+				bla bla bla
+			</b></p>
+		
+		]]>
+		</startContent>		
+		<!--<End> -->
+	</settings>
+
+	<!-- 
+		please read the HELP file
+		
+		you can write HTML code between <timeElapsed></timeElapsed>, <title></title>,
+		<finalScore></finalScore>, <remainingTime></remainingTime>, <correctAnswerLbl></correctAnswerLbl>, 
+		<yourAnswerLbl></yourAnswerLbl>, <scoreLbl></scoreLbl>, <detailsBtn></detailsBtn>, <okBtn></okBtn>, 
+		<showResults></showResults>, <startQuiz></startQuiz>, <backBtn></backBtn>, <restartQuiz></restartQuiz>, 
+		<crtSeparator></crtSeparator>, <allAreWrong></allAreWrong>, <answerAllAreWrong></answerAllAreWrong>, 
+		<answerAllwrongInput></answerAllwrongInput>, <answerSeparator></answerSeparator>, <startContent></startContent>, 
+		<resultTitle></resultTitle>, <resultContent></resultContent>, <questionText></questionText>, <answer></answer>.
+		
+		for more information please visit this link:
+		http://livedocs.adobe.com/flash/9.0/ActionScriptLangRefV3/flash/text/TextField.html#htmlText
+		
+		DEFAULT INPUT QUESTION NODE STRUCTURE
+		<question>
+			<questionType>input</questionType>
+			<questionText><![CDATA[<p><i></i></p>]]></questionText>
+			<score></score>
+			<timeLimit></timeLimit>
+
+			it can take: char, spaceChar, integer & number
+			<restrictInput></restrictInput> - You can delete this node if you want to have an inputfield with no restriction
+			
+			<charLimit></charLimit> - You can delete this node if you want an inputfield with no char limitation
+
+			<answers>
+				<answer><![CDATA[<p class='grey'></p>]]></answer>						
+			</answers>
+		</question>
+		
+		DEFAULT CHECK BUTTON QUESTION NODE STRUCTURE
+		<question>
+			<questionType>check</questionType>
+			<questionText><![CDATA[<p><i></i></p>]]></questionText>
+			<score></score>
+			<timeLimit></timeLimit>
+		
+			<answers>
+				<answer correct="true"><![CDATA[<p><i></i></p>]]></answer>
+				...
+				<answer><![CDATA[<p><i></i></p>]]></answer>
+				...
+			</answers>
+		</question>
+		
+		DEFAULT RADIO BUTTON QUESTION NODE STRUCTURE
+		<question>
+			<questionType>radius</questionType>
+			<questionText><![CDATA[<p><i></i></p>]]></questionText>
+			<score></score>
+			<timeLimit></timeLimit>
+		
+			<answers>
+				<answer correct="true"><![CDATA[<p><i></i></p>]]></answer>
+				<answer><![CDATA[<p><i></i></p>]]></answer>
+				...
+			</answers>
+		</question>
+		
+	-->
+	<results>
+		
+		<result>
+			<resultTitle><![CDATA[<p class='title'>Hasil Pertama.</p>]]></resultTitle>
+			<resultContent>
+				<![CDATA[<p class='grey-darker'>
+				anda tidak lulus kuis , anda harus belajar sangat giat lagi :(
+			</p>]]>
+			</resultContent>
+		</result>
+		
+		<result>
+			<resultTitle><![CDATA[<p class='title'>Hasil Kedua.</p>]]></resultTitle>
+			<resultContent>
+				<![CDATA[<p class='grey-darker'>
+				nilai anda tidak lulus kuis , anda harus belajar lagi :(
+			</p>]]>
+			</resultContent>
+		</result>
+		
+		<result>
+			<resultTitle><![CDATA[<p class='title'>Hasil Ketiga.</p>]]></resultTitle>
+			<resultContent>
+			<![CDATA[<p class='grey-darker'>
+			nilai anda cukup untuk lulus kuis :)
+			</p>
+			]]>
+			</resultContent>
+		</result>
+		
+		<result>
+			<resultTitle><![CDATA[<p class='title'>Hasil Keempat.</p>]]></resultTitle>
+			<resultContent>
+			<![CDATA[<p class='grey-darker'>
+			nilai anda bagus anda lulus kuis :)
+			</p>]]>
+			</resultContent>
+		</result>
+		
+		<result>
+			<resultTitle><![CDATA[<p class='title'>Hasil Kelima.</p>]]></resultTitle>
+			<resultContent>
+			<![CDATA[<p class='grey-darker'>
+			nilai anda sangat bagus anda lulus kuis :)
+			</p>]]>
+			</resultContent>
+		</result>
+		
+	</results>
+
+	<questions>
+		
+		<question>
+			<questionType>radius</questionType>
+			<questionText><![CDATA[<p><i>siapa penemu adobe premiere pro? (R: 1)</i></p>]]></questionText>
+			<score>30</score>
+			<timeLimit>5</timeLimit>
+		
+			<answers>
+				<answer correct="true"><![CDATA[<p><i>1</i></p>]]></answer>
+				<answer><![CDATA[<p><i>12</i></p>]]></answer>
+				<answer><![CDATA[<p><i>3</i></p>]]></answer>
+				<answer><![CDATA[<p><i>25</i></p>]]></answer>
+			</answers>
+		</question>
+		
+		<question>
+			<questionType>radius</questionType>
+			<questionText><![CDATA[<p><i>kapan ditemukan aplikasi adobe premiere pro? (R: 9)</i></p>]]></questionText>
+			<score>31</score>
+			<timeLimit>10</timeLimit>
+		
+			<answers>
+				<answer><![CDATA[<p><i>10</i></p>]]></answer>
+				<answer><![CDATA[<p><i>5</i></p>]]></answer>
+				<answer><![CDATA[<p><i>15</i></p>]]></answer>
+				<answer><![CDATA[<p><i>1000</i></p>]]></answer>
+				<answer correct="true"><![CDATA[<p><i>9</i></p>]]></answer>
+				<answer><![CDATA[<p><i>3</i></p>]]></answer>
+				<answer><![CDATA[<p><i>8</i></p>]]></answer>
+				<answer><![CDATA[<p><i>99999</i></p>]]></answer>
+			</answers>
+		</question>
+				
+		<question>
+			<questionType>check</questionType>
+			<questionText><![CDATA[<p><i>selain adobe premiere apa software keluaran adobe? (R: all)</i></p>]]></questionText>
+			<score>28</score>
+			<timeLimit>7</timeLimit>
+		
+			<answers>
+				<answer correct="true"><![CDATA[<p><i>1,000 metres</i></p>]]></answer>
+				<answer correct="true"><![CDATA[<p><i>0.621371 miles</i></p>]]></answer>
+				<answer correct="true"><![CDATA[<p><i>1,093.61 yards</i></p>]]></answer>
+				<answer correct="true"><![CDATA[<p><i>3,280.84 feet</i></p>]]></answer>
+			</answers>
+		</question>
+		
+		<question>
+			<questionType>input</questionType>
+			<questionText><![CDATA[<p><i>siapa penemu adobe? (R: Yuri Gagarin)</i></p>]]></questionText>
+			<score>27</score>
+			<timeLimit>15</timeLimit>
+
+			<restrictInput>spaceChar</restrictInput>
+			<charLimit>12</charLimit>
+		
+			<answers>
+				<answer><![CDATA[<p class='grey'>Yuri Gagarin</p>]]></answer>						
+			</answers>
+		</question>
+		
+		<question>
+			<questionType>radius</questionType>
+			<questionText><![CDATA[<p><i>apa warna khas dari software adobe premiere pro? (R: 24H)</i></p>]]></questionText>
+			<score>51</score>
+			<timeLimit>7</timeLimit>
+		
+			<answers>
+				<answer><![CDATA[<p><i>12H</i></p>]]></answer>
+				<answer><![CDATA[<p><i>50H</i></p>]]></answer>
+				<answer><![CDATA[<p><i>99H</i></p>]]></answer>
+				<answer correct="true"><![CDATA[<p><i>24H</i></p>]]></answer>
+			</answers>
+		</question>
+		
+		<question>
+			<questionType>input</questionType>
+			<questionText><![CDATA[<p><i>untuk memisahkan vidio dengan audio di premier pro kita mengunakan fungsi? (R: 1969)</i></p>]]></questionText>
+			<score>40</score>
+			<timeLimit>10</timeLimit>
+
+			<restrictInput>integer</restrictInput>
+			<charLimit>4</charLimit>
+
+			<answers>
+				<answer><![CDATA[<p class='grey'>1969</p>]]></answer>						
+			</answers>
+		</question>
+		
+		<question>
+			<questionType>radius</questionType>
+			<questionText><![CDATA[<p><i>jika kita inggin membuat perpindahan vidio halus di "premiere pro" kita menggunakan evek ? (R: neil armstrong)</i></p>]]></questionText>
+			<score>20</score>
+			<timeLimit>11</timeLimit>
+		
+			<answers>
+				<answer><![CDATA[<p><i>David Scott</i></p>]]></answer>
+				<answer correct="true"><![CDATA[<p><i>Neil Armstrong</i></p>]]></answer>
+				<answer><![CDATA[<p><i>Buzz Aldrin</i></p>]]></answer>
+			</answers>
+		</question>
+		
+		<question>
+			<questionType>input</questionType>
+			<questionText><![CDATA[<p><i>apa format keluaran asli dari adobe premiere pro? (R: 1914-1918)</i></p>]]></questionText>
+			<score>50</score>
+			<timeLimit>25</timeLimit>
+			<restrictInput>integer</restrictInput>
+			<charLimit>9</charLimit>
+			
+			<answers>
+				<answer><![CDATA[<p>1914-1918</p>]]></answer>
+			</answers>
+		</question>
+		
+		<question>
+			<questionType>check</questionType>
+			<questionText><![CDATA[<p><i>apa logo khas dari adobe premiere pro?: (R: 60 seconds & 60000 milliseconds)</i></p>]]></questionText>
+			<score>49</score>
+			<timeLimit>7</timeLimit>
+		
+			<answers>
+				<answer><![CDATA[<p><i>6 seconds</i></p>]]></answer>
+				<answer><![CDATA[<p><i>60000 seconds</i></p>]]></answer>
+				<answer><![CDATA[<p><i>6 hours</i></p>]]></answer>
+				<answer correct="true"><![CDATA[<p><i>60 seconds</i></p>]]></answer>
+				<answer correct="true"><![CDATA[<p><i>60000 milliseconds</i></p>]]></answer>
+			</answers>
+		</question>
+		
+		<question>
+			<questionType>input</questionType>
+			<questionText><![CDATA[<p><i>selain adobe premiere apa software keluaran adobe untuk editing vidio? (R: 2.54)</i></p>]]></questionText>
+			<score>55</score>
+			<timeLimit>12</timeLimit>
+			<restrictInput>number</restrictInput>
+			<charLimit>4</charLimit>
+
+			<answers>
+				<answer><![CDATA[<p>2.54</p>]]></answer>
+			</answers>
+		</question>
+		
+		<question>
+			<questionType>check</questionType>
+			<questionText><![CDATA[<p><i>jika kita inggin memberi evek dipercepat atau slow motion kita mengunakan fungsi (R: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto)</i></p>]]></questionText>
+			<score>9</score>
+			<timeLimit>30</timeLimit>
+		
+			<answers>
+				<answer><![CDATA[<p><i>Mercury, Venus, Mars, Earth, Jupiter, Saturn, Uranus, Neptune, Pluto</i></p>]]></answer>
+				<answer><![CDATA[<p><i>Mercury, Jupiter, Earth, Mars, Venus, Saturn, Uranus, Neptune, Pluto</i></p>]]></answer>
+				<answer><![CDATA[<p><i>Pluto, Jupiter, Earth, Mars, Venus, Saturn, Uranus, Neptune, Mercury</i></p>]]></answer>
+				<answer correct="true"><![CDATA[<p><i>Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto</i></p>]]></answer>
+			</answers>
+		</question>
+		
+		<question>
+			<questionType>radius</questionType>
+			<questionText><![CDATA[<p><i>apa nana jendela untuk melihat hasil pengerjaan dari preriere pro? (R: yes)</i></p>]]></questionText>
+			<score>8</score>
+			<timeLimit>5</timeLimit>
+		
+			<answers>
+				<answer correct="true"><![CDATA[<p><i>Yes</i></p>]]></answer>
+				<answer><![CDATA[<p><i>No</i></p>]]></answer>
+			</answers>
+		</question>
+		
+		<question>
+			<questionType>input</questionType>
+			<questionText><![CDATA[<p><i>kenapa anda inggin belajar adobe premiere pro cs 3?: (R: oxylus)</i></p>]]></questionText>
+			<score>100</score>
+			<timeLimit>6</timeLimit>
+
+			<restrictInput>char</restrictInput>
+			<charLimit>6</charLimit>
+
+			<answers>
+				<answer><![CDATA[<p>oxylus</p>]]></answer>
+			</answers>
+		</question>
+		
+		<question>
+			<questionType>check</questionType>
+			<questionText><![CDATA[<p><i>kenapa  premiere pro berlambang "Pr" ?(R: all are wrong)</i></p>]]></questionText>
+			<score>2</score>
+			<timeLimit>3</timeLimit>
+		
+			<answers>
+				<answer><![CDATA[<p><i>3</i></p>]]></answer>
+				<answer><![CDATA[<p><i>4</i></p>]]></answer>
+				<answer><![CDATA[<p><i>5</i></p>]]></answer>
+				<answer><![CDATA[<p><i>6</i></p>]]></answer>
+			</answers>
+		</question>
+							
+	</questions>
+	
+</data>

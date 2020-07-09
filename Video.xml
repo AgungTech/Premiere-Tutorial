@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<videos>
+
+	<video>
+		<title>Instalasi premiere</title>
+		<description><![CDATA[]]></description>
+		<url>video/instalasi.flv</url>
+		<thumbnail>video/b.jpg</thumbnail>
+		<duration>14:15</duration>
+	</video>
+	<video>
+		<title>Perkenalan premiere</title>
+		<description><![CDATA[]]></description>
+		<url>video/perkenalan_premier.flv</url>
+		<thumbnail>video/a.jpg</thumbnail>
+		<duration>16:14</duration>
+	</video>
+	<video>
+		<title>Tutorial 3</title>
+		<description><![CDATA[]]></description>
+		<url>video/garden_scene.flv</url>
+		<thumbnail>video/2.jpg</thumbnail>
+		<duration>00:40</duration>
+	</video>
+	<video>
+		<title>Tutorial 4</title>
+		<description><![CDATA[]]></description>
+		<url>video/water_surface.flv</url>
+		<thumbnail>video/3.jpg</thumbnail>
+		<duration>00:31</duration>
+	</video>
+	<video>
+		<title>Tutorial 5</title>
+		<description><![CDATA[]]></description>
+		<url>video/camera_focus.flv</url>
+		<thumbnail>video/1.jpg</thumbnail>
+		<duration>00:25</duration>
+	</video>
+
+</videos>
